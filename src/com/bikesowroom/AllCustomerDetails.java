@@ -24,14 +24,7 @@ public class AllCustomerDetails {
 		FileInputStream fileInputStream = new FileInputStream(file);
 		ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 		ArrayList<CustomerDatails> arrayList = (ArrayList<CustomerDatails>) objectInputStream.readObject();
-		
-//		for (CustomerDatails customerDatails : arrayList) {
-//			System.out.println("CustomerName : "+customerDatails.getCustomerName());
-//			System.out.println("CustomerMobileNumber : "+customerDatails.getMobile());
-//			System.out.println("CustomerAge : "+customerDatails.getCustomerAge());
-//			System.out.println("BikeModel : "+customerDatails.getBikeModel());
-//			System.out.println("BikeNumber : "+customerDatails.getBikeNumber());
-//		}
+
 		for (int i = 0; i < arrayList.size(); i++) {
 			System.out.println("CustomerName : "+arrayList.get(i).getCustomerName());
 			System.out.println("CustomerMobileNumber : "+arrayList.get(i).getMobile());
