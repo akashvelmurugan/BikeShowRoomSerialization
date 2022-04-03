@@ -16,14 +16,14 @@ public class ServiceAndInfo {
 		String  bikeNumber= scanner.next();
 		String upperCase = bikeNumber.toUpperCase();
 		
-		System.out.println("Enter Your Enter Your Mobile Number:");
+		System.out.println("Enter Your Mobile Number:");
 		String mobileNumber = scanner.next();
 		long currentTimeMillis = System.currentTimeMillis();
 		Date date= new Date(currentTimeMillis);
 		System.out.println(date);
 		
 		System.out.println("Thank For You FeedBack");
-		FileWriter fileWriter = new FileWriter("D:\\ShowRoom\\FeedBack.txt",true);
+		FileWriter fileWriter = new FileWriter("E:\\ShowRoom\\FeedBack.txt",true);
 		BufferedWriter bufferedWriter=new BufferedWriter(fileWriter);
 		PrintWriter printWriter= new PrintWriter(bufferedWriter);
 		printWriter.println(upperCase+" "+mobileNumber+" "+date);

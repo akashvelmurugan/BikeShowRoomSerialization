@@ -13,9 +13,10 @@ public class HomePage {
 		System.out.println("        **********HOME PAGE**********");
 		System.out.println("BOOK NOW '1' :");
 		System.out.println("ALL CUSTOMER DETAILS '2' :");
-		System.out.println("SEARCH DETAILS BY CUSTOMER MOBILE NUMBER '3' :");
-		System.out.println("MY PRODUCTS ENTER '4' :");
-		System.out.println("SERVICE INFORMATION '5' :");
+		System.out.println("SEARCH DETAILS BY CUSTOMER BIKE '3' :");
+		System.out.println("SEARCH DETAILS BY CUSTOMER MOBILE NUMBER '4' :");
+		System.out.println("MY PRODUCTS ENTER '5' :");
+		System.out.println("SERVICE INFORMATION '6' :");
 		System.out.println("EXIT ENTER '0' :");
 	}
 	public void exit() throws InterruptedException {

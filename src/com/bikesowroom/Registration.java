@@ -19,7 +19,9 @@ public class Registration {
 		FileInputStream fileInputStream = new FileInputStream(FileLocation.location());
 		ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 		ArrayList<CustomerDatails> arrayList = (ArrayList<CustomerDatails>) objectInputStream.readObject();
-
+		
+		
+		
 		getCustomerName();
 		System.out.println("Your Name Is:"+customerDatails.getCustomerName()+"\n");
 
@@ -174,8 +176,6 @@ public class Registration {
 			}else {
 				System.out.println("Invalid Characters : "+invalidCharacter);
 			}
-
 		}
-
 	}	
 }

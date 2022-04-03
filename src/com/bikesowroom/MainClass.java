@@ -6,10 +6,10 @@ public class MainClass {
 	public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
 		Scanner  scanner= new Scanner(System.in);
 		HomePage homePage = new HomePage();
-	//	homePage.intro();
+		homePage.intro();
 
 		BikeModelAndMyProduct myProduct= new BikeModelAndMyProduct();
-
+		SearchBy searchDetailsBy = new SearchBy();
 		boolean shouldContinue = true;
 
 		while (shouldContinue) { 		
@@ -29,14 +29,18 @@ public class MainClass {
 				break;
 
 			case "3":
-				SearchDetailsByMobileNumber.searchByMobileNumber();		
+				searchDetailsBy.searchByBikeNumber();
 				break;
-
+				
 			case "4":
-				myProduct.bikeModel();
+				searchDetailsBy.searchByMobileNumber();		
 				break;
 
 			case "5":
+				myProduct.bikeModel();
+				break;
+
+			case "6":
 				ServiceAndInfo.customerFeedBack();	
 				break;	
 
